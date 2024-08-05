@@ -2,12 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="bentoFlexbox">
+      <section class="start-bento">
+      <img class="myphoto" src="/myphoto.png"  alt="wooooow">
+      <div id="nameBox">
+        <p>Hello 👋🏻 I’m</p> 
+        <div class="info">
+          <h1> Agafonov Maxim</h1>
+            <h2>Frontend-delevoper</h2> 
+        </div>
+      </div>
+      <div id="lenguagesBox">
+        <p class="title">Languages</p>
+        <div class="nameLenguage">
+          <p>Python</p>
+          <p style="margin: 10px 0;">C++</p>
+          <p>JS</p>            
+        </div>
+        <div class="levelLenguage">
+          <div class="galicianProgressBar" style="width: 18px;"></div>
+          <div class="galicianProgressBar" style="margin: 10px 0px; width: 138px;"></div>
+          <div class="galicianProgressBar"  style="width: 68px;"></div>
+        </div>
+      </div>
+      </section>
+
+      <section id="continue-bento">
+        <div id="experienceBox">
+          <p class="title">Experience</p>
+          <div class="jobList">
+            <div id="lastJob">
+              <div class="topBar">
+                <span class="date">Jun. 2023 - Present </span>
+                <div class="most-recent"><p>most recent</p></div>
+              </div>
+              <div class="content">
+                <div class="jobInfo">
+                  <p class="roleName">
+                    Marketing Manager
+                  </p>
+                  <div class="aboutJob">
+                    <p class="companyName">
+                      Pankayam
+                    </p>
+                    <p class="|">
+                      |
+                    </p>
+                    <p class="info">
+                      Full-time
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="job-2">
+              <div class="topBar">
+
+              </div>
+              <div class="content">
+                
+              </div>
+            </div>
+
+            <div id="job-3">
+              <div class="topBar">
+
+              </div>
+              <div class="content">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
