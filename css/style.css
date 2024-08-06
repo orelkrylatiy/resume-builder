@@ -36,8 +36,10 @@ body{
   background: #f0f0f0;
   border-radius: 12px;
   width: 124px;
-  height: 124px;  
+  height: 100%;  
   margin: 0 20px;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 #nameBox p{
@@ -45,14 +47,13 @@ body{
   font-weight: 500;
   font-size: 10px;
   color: #000;
-  margin: 12px 12px 46px;
+  margin: 12px 12px 30%;
 }
 
 #nameBox .info h1{
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 14px;
-  line-height: 104%;
   color: #000;
 
 
@@ -60,7 +61,7 @@ body{
 
 .info{
   margin: 0 12px 12px 7px;
-  width: 100px;
+  width: 80%;
   height: 39px;
 
 }
@@ -118,15 +119,17 @@ body{
 }
 
 #continue-bento{
+  display: flex;
   margin: 20px 20px 0px 0px;
   border-radius: 12px;
-  width: 411px;
+  width: 100%;
   height: 359px;
-  background: #f0f0f0;
+  background: #ffffff;
 
 }
 
 .jobList{
+  margin: 0 8px;
 }
 
 .topBar{
@@ -141,24 +144,30 @@ body{
   width: 411px;
   height: 359px;
   background: #f0f0f0;
-  
+  margin-right: 10px;
 }
 
 #experienceBox .title{
   width: 0%;
   font-size: 14px;
-  margin: 12px 232px 16px 12px;
+  margin: 12px 232px 26px 12px;
 }
 
-#lastJob{
+#lastJob, #job-2{
   background: #28d979;
   border-radius: 10px;
-  padding: 8px 0px 8px 8px;
+  padding: 8px 0px 8px 3px;
   width: 387px;
   height: 76px;
+  white-space: normal; /* Разрешает перенос текста */
+  overflow-wrap: break-word; /* Разрешает перенос длинных слов */
+
 }
 
-
+.content{
+  display: flex;
+  width: 100%;
+}
 
 .date{
   font-family: var(--font-family);
@@ -186,5 +195,322 @@ body{
 
 .aboutJob{
   display: flex;
+  width: 100%;
+}
+
+.roleName{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  color: #fff;
   
+}
+
+
+.jobInfo{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: #ebf9f2;
+  width: 124px;
+  height: 25px;
+  margin: 15px 22px 19px 4px;
+}
+
+ul {
+  list-style-type: disc; /* или circle, square, и т.д. */
+}
+
+.content ul{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: #fff;
+  width: 239px;
+  margin-top: 12px;
+}
+
+#job-2{
+  background-color: #ffffff;
+  margin: 10px 0px;
+  color: #000;
+}
+
+#job-2 .date,
+#job-2 .topBar,
+#job-2 .roleName ,
+#job-2 .aboutJob,
+#job-2 ul{
+  color: #000 ;
+}
+
+#job-2 ul{
+  margin-top: -4px;
+}
+
+#job-3{
+  background-color: #ffffff;
+  margin: 10px 0px;
+  color: #000;
+}
+
+
+#job-3 ul{
+  margin-top: -7px;
+}
+
+#job-3 .date{
+  margin-top: 10px;
+}
+
+#job-3 .date,
+#job-3 .topBar,
+#job-3 .roleName ,
+#job-3 .aboutJob,
+#job-3 ul{
+  color: #000 ;
+}
+
+.toolsBox{
+  border-radius: 12px;
+  width: 124px;
+  height: 359px;
+  background: #f0f0f0;
+
+}
+
+.title-tools{
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000;
+  width: 37px;
+  height: 21px;
+  padding-left: 10px; 
+  margin-top: 5px;
+}
+
+.toolsBox .tag{
+  
+  border-radius: 59px;
+  width: 30px;
+  height: 11px;
+  background: #000;
+  margin: -120px auto 10px auto;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 5px;
+  line-height: 142%;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;  
+}
+
+.content-tools, .content-tools1{
+  border-radius: 6px;
+  width: 76px;
+  height: 111px;
+  background: #fff;
+  margin: 10px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 5px;
+}
+
+img {
+  margin: 0 5px;
+}
+
+.content-tools1{
+  width: 76px;
+  height: 88px;
+  margin-top: -20px;
+}
+
+.educationBox{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  padding: 0px;
+  width: 268px;
+  height: 289px;
+  background: #f0f0f0;
+  margin-top: 8px;
+  margin-right: 8px;
+  
+}
+
+.educationBox .topBar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.educationBox .title{
+  margin-bottom: 0px;
+}
+
+.lastEducation, .education-2, .education-3{
+  border-radius: 10px;
+  padding: 8px;
+  width: 108px;
+  height: 112px;
+  background: #28d979;
+  margin-top: 10px;  
+}
+
+
+
+.date-end{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.end-bento{
+  display: flex;
+  width: 100%;
+  height: 298px;
+}
+
+.content1{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nameTitle{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.tags-list {
+  list-style: none; /* Убирает стандартные маркеры списка */
+  padding: 0; /* Убирает отступы */
+}
+
+.tags-list li {
+  display: inline-block; /* Элементы списка рядом друг с другом */
+
+}
+
+.tags-list{
+  width: 100px;
+  height: 48px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: #ebf9f2;
+  
+}
+
+.my{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px; 
+}
+
+.education-2{
+  width: 108px;
+  height: 100px;
+  background-color: #ffffff;
+  color: #000;
+  
+}
+
+.lastEducation{
+  margin-right: 4px;
+  margin-left: 8px;
+}
+
+.education-3{
+  margin-top: 8px;
+  border-radius: 10px;
+  padding: 8px;
+  width: 108px;
+  height: 88px;
+  background-color: #ffffff;
+  color: #000;
+  margin-left: 8px;
+
+}
+
+.education-3 .date-end, .education-3 .tags-list, .education-3 .my , .education-3 .nameTitle{
+  color: #000;
+}
+
+.interestsBox{
+  border-radius: 12px;
+  padding: 12px;
+  width: 258px;
+  height: 148px;
+  background: #f0f0f0;
+  margin-top: 8px;
+  flex-shrink: 0;  
+
+}
+
+.contact{
+  border-radius: 12px;
+  padding: 12px;
+  width: 258px;
+  height: 71px;
+  background: #000;
+  flex-shrink: 0;  
+  margin-top: 20px;
+}
+
+.interestsBox .tags {
+  display: flex;
+  flex-wrap: wrap;
+  height: 23px;
+  gap: 10px; /* Расстояние между тегами */
+  border-radius: 15px; /* Скругленные углы для области тегов */
+}
+
+.interestsBox .tag {
+
+  white-space: nowrap;  /* Предотвращает перенос текста */
+  display: inline-block;
+  border-radius: 40px;
+  padding: 4px 10px;
+  width: 67px;
+  height: 15px;
+  background: #fff;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  text-align: center;
+  color: #000;
+  
+
+}
+
+
+[contenteditable="true"]:focus {
+  border: 1px solid blue;
+  background-color: #f0f0f0;
+  padding: 5px;
+  outline: none;
 }

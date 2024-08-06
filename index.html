@@ -1,30 +1,48 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" >
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    img-src 'self' data:;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="javascript.svg" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
+
+    <div id="resume" contenteditable="true">
+
     <div id="bentoFlexbox">
       <section class="start-bento">
-      <img class="myphoto" src="/myphoto.png"  alt="wooooow">
+      <img class="myphoto" src="myphoto.png"  alt="wooooow">
       <div id="nameBox">
         <p>Hello 👋🏻 I’m</p> 
         <div class="info">
-          <h1> Agafonov Maxim</h1>
-            <h2>Frontend-delevoper</h2> 
+          <h1 contenteditable="true"> Agafonov Maxim</h1>
+            <h2 contenteditable="true">Frontend-delevoper</h2> 
         </div>
       </div>
       <div id="lenguagesBox">
         <p class="title">Languages</p>
         <div class="nameLenguage">
-          <p>Python</p>
-          <p style="margin: 10px 0;">C++</p>
-          <p>JS</p>            
+          <p contenteditable="true"> Python</p>
+          <p contenteditable="true" style="margin: 10px 0;">C++</p>
+          <p contenteditable="true">JS</p>            
         </div>
         <div class="levelLenguage">
           <div class="galicianProgressBar" style="width: 18px;"></div>
@@ -40,50 +58,285 @@
           <div class="jobList">
             <div id="lastJob">
               <div class="topBar">
-                <span class="date">Jun. 2023 - Present </span>
-                <div class="most-recent"><p>most recent</p></div>
+                <span class="date" contenteditable="true">Jun. 2023 - Present </span>
+                <div class="most-recent" contenteditable="true"><p>most recent</p></div>
               </div>
               <div class="content">
                 <div class="jobInfo">
-                  <p class="roleName">
+                  <p class="roleName" contenteditable="true">
                     Marketing Manager
                   </p>
                   <div class="aboutJob">
-                    <p class="companyName">
+                    <p class="companyName" contenteditable="true">
                       Pankayam
                     </p>
-                    <p class="|">
+                    <p style="margin: 0px 5%;">
                       |
                     </p>
-                    <p class="info">
+                    <p class="" contenteditable="true">
                       Full-time
                     </p>
                   </div>
                 </div>
+                  <ul>
+                    <li contenteditable="true">Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
+                    <li contenteditable="true">SEO Content Creation for Blogs, Website, Social media</li>
+                  </ul>
               </div>
             </div>
 
             <div id="job-2">
               <div class="topBar">
+                <span class="date">                2017 - Present
+                </span>
 
               </div>
               <div class="content">
-                
+                <div class="jobInfo">
+                  <p class="roleName" contenteditable="true">
+                    Graphic / Web designer
+                  </p>
+                  <div class="aboutJob">
+                    <p class="companyName" contenteditable="true">
+                      Freelance
+                    </p>
+     
+                  </div>
+                </div>
+                  <ul>
+                    <li contenteditable="true">Development of internal projects from scratch, product design of brands </li>
+                    <li contenteditable="true">Landing page, webapps and hybrid apps</li>
+                    <li contenteditable="true">Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary</li>
+                  </ul>
+              
               </div>
             </div>
-
             <div id="job-3">
               <div class="topBar">
+                <span class="date" contenteditable="true">                2017 - Present
+                </span>
 
               </div>
               <div class="content">
-                
-              </div>
+                <div class="jobInfo">
+                  <p class="roleName" contenteditable="true">
+                    Legal Assistant
+                  </p>
+                  <div class="aboutJob">
+                    <p class="companyName" contenteditable="true">
+                      Law Firm
+                    </p>
+                    <p style="margin: 0px 5%;">
+                      |
+                    </p>
+                    <p class="" contenteditable="true">
+                      Intern
+                    </p>
+                  </div>                </div>
+                  <ul>
+                    <li contenteditable="true">Provide administrative support to lawyer and enhance office effectiveness </li>
+                    <li contenteditable="true">Handle communication with clients, witnesses etc.</li>
+                    <li contenteditable="true"> repare case briefs and summarize depositions, interrogatories and testimony</li>
+                  </ul>
+              
+              </div>            
             </div>
           </div>
         </div>
+
+        <div class="toolsBox">
+          <span class="title-tools" contenteditable="true">
+            Tools
+          </span>
+          <div class="content-tools">
+            <img style="margin-top: 20px;"  src="assets/logoChatGPT 1.svg" alt="">
+            <img style="margin-top: 20px;"  src="assets/logoCopilot 1.svg" alt="">
+            <img src="assets/logoFigma.svg" alt="">
+            <img  style="margin-left: 15px;" src="assets/logoFramer.svg" alt="">
+            <img style="margin-bottom: 20px;"  src="assets/logoMeet.svg" alt="">
+            <img  style="margin-bottom: 20px;" src="assets/logoMidjourney 1.svg" alt="">
+          </div>
+          <div class="tag">  <p contenteditable="true">design</p>        </div>
+
+          <div  style="margin-top: 138px;" class="toolsBox2">
+            <div  class="content-tools1">
+              <img style="margin-top: 10px;" src="assets/logoNotion.svg" alt="">
+              <img style="margin-top: 10px;" src="assets/logoWebflow.svg" alt="">
+              <img src="assets/logoWordpress.svg" alt="">
+              <img src="assets/logoZapìer 1.svg" alt="">
+            </div>
+            <div style="margin-top: -100px;"  class="tag">  <p contenteditable="true">no-code</p>        </div>
+  
+          </div>
+
+
+          <div  style="margin-top: 118px;" class="toolsBox2">
+            <div  class="content-tools1">
+              <img style="margin-top: 10px;" src="assets/logoNotion.svg" alt="">
+              <img style="margin-top: 10px;" src="assets/logoWebflow.svg" alt="">
+              <img src="assets/logoWordpress.svg" alt="">
+              <img src="assets/logoZapìer 1.svg" alt="">
+            </div>
+            <div style="margin-top: -100px; border-radius: 59px;
+            text-align: center;
+
+            width: 65px;
+            height: 11px;
+            "  class="tag">  <p contenteditable="true">artoficial intelligence</p>        </div>
+  
+          </div>
+
+        </div>
+        
       </section>
-    </div>
-    <script type="module" src="./js/main.js"></script>
+
+      <section class="end-bento">
+        <div class="educationBox">
+          <p class="title" contenteditable="true">Education</p>
+
+          <div class="lastEducation">
+            <div class="topBar">
+              <p class="date-end" contenteditable="true">2023</p>
+              <img src="Vector.svg" alt="">
+            </div>
+
+            <div class="content1">
+              <p class="nameTitle" contenteditable="true"> UI/UX</p>
+              <ul class="tags-list">
+                <li contenteditable="true">#UX</li>
+                <li contenteditable="true"  >#UI</li>
+                <li contenteditable="true" >#research</li>
+                <li contenteditable="true" >#DesignSystem</li>
+                <li contenteditable="true" >#Ui</li>
+                <li contenteditable="true" >#wireframing</li>
+                <li contenteditable="true" >#figma</li>
+                <li contenteditable="true" >#Ux</li>
+            </ul>
+            <p  contenteditable="true"  style="  padding-top: 5px; " class = "my">Coursera</p>
+            </div>
+          </div>
+
+          <div  style="color: #000;" class="education-2">
+            <div class="topBar">
+              <p  contenteditable="true" style="color: #000;" class="date-end">2023</p>
+              <img src="Vector.svg" alt="">
+            </div>
+
+            <div style="color: #000;" class="content1">
+              <p  contenteditable="true" style="color: #000;" class="nameTitle"> Law</p>
+              <ul style="color: #000;" class="tags-list">
+                <li contenteditable="true" >#law</li>
+                <li contenteditable="true" >#legalStudies</li>
+                <li contenteditable="true"> #contracts</li>
+                <li contenteditable="true" >#internationalLaws</li>
+
+            </ul>
+            
+            
+            
+            <p style="color: #000; font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 150%;
+            text-align: center;
+            color: #000;
+            margin-top: -5px;" class = "my" contenteditable="true" >University of Kerala</p>
+            </div>
+          </div>
+
+          <div class="education-3">
+            <div class="topBar">
+              <p  contenteditable="true" class="date-end">2023</p>
+              <img src="Vector.svg" alt="">
+            </div>
+
+            <div class="content1">
+              <p  contenteditable="true" class="nameTitle"> Graphic design</p>
+              <ul class="tags-list">
+                <li contenteditable="true" >#illustration</li>
+                <li contenteditable="true" >#branding</li>
+                <li contenteditable="true" >#web</li>
+                <li contenteditable="true" >#adobe</li>
+
+            </ul>
+            <p  contenteditable="true" style="margin-top: -20px;"  class = "my">Coursera</p>
+            </div>
+          </div>
+
+        </div>
+        <div>
+        <div class="interestsBox">
+          <p  contenteditable="true" style="margin-top: 3px;" class="title">Interests</p>
+          <div>
+            <div class="tags">
+              <span contenteditable="true" style="width: 67px;" class="tag">branding</span>
+              <span contenteditable="true"  style="width: 34px;"   class="tag">design</span>
+              <span contenteditable="true" style="width: 66px;"   class="tag">photography</span>
+              <span contenteditable="true" style="width: 121px;"  class="tag">artificial intelligence</span>
+              <span contenteditable="true" style="width: 73px;"  class="tag">illustration</span>
+              <span contenteditable="true" style="width: 79px;"  class="tag">typography</span>
+              <span contenteditable="true" style="width: 97px;"  class="tag">social networks</span>
+              <span contenteditable="true" style="width: 45px;"  class="tag">research</span>
+              <span contenteditable="true" style="width: 68px;"  class="tag">dron pilot</span>
+              <span contenteditable="true"  style="width: 46px;"  class="tag">games</span>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="contact">
+          <p style="font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          color: #fff;
+          " contenteditable="true">Let´s chat! I´m ready to work on excinting projects</p>
+          <a href="#" style="font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 150%;
+          color: #ddd;
+          display: block;
+          margin-top: 20px;
+          text-decoration: none;
+
+          " contenteditable="true">maxooййooon@gmail.com</a>
+        </div>
+      </div>
+      </section>
+      
+    </div>  
+  </div>
+
+  <button id="download-pdf" style="margin: 10px 250px; background-color: aquamarine;">Скачать PDF</button>
+
+  <!-- <button id="download-pdf" style="margin: 11px 100px;" >Скачавапрть PDF</button> -->
+<!-- Подключение библиотеки html2pdf.js -->
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+<script>
+document.getElementById('download-pdf').addEventListener('click', function() {
+  html2canvas(document.body, {
+    useCORS: true
+}).then(canvas => {
+    const imgData = canvas.toDataURL('image/png');
+    const pdf = new jsPDF({
+        orientation: 'portrait',
+        unit: 'px',
+        format: [canvas.width, canvas.height]
+    });
+    pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+    pdf.save('edited-page.pdf');
+}).catch(err => {
+    console.error('!!!!!!!!!!!!Ошибка при создании PDF:', err);
+});
+
+
+});
+
+</script>
+
+
   </body>
 </html>
